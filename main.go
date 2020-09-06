@@ -35,7 +35,7 @@ func main() {
 }
 
 func setupAPIV1(app *fiber.App) {
-	v1 := app.Group("/v1")
+	v1 := app.Group("/api/v1")
 	setupTodoRoutes(v1)
 }
 
