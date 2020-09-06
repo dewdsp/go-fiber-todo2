@@ -18,7 +18,7 @@ var todos = []*Todo{
 	{ID: 1, Name: "Walk the dog", Completed: false},
 	{ID: 2, Name: "Walk the cat", Completed: false},
 	{ID: 3, Name: "Walk the bat", Completed: false},
-	{ID: 4, Name: "Walk the rat", Completed: false},
+	{ID: 4, Name: "Walk the rabbit", Completed: false},
 }
 
 func main() {
@@ -35,7 +35,7 @@ func main() {
 }
 
 func setupAPIV1(app *fiber.App) {
-	v1 := app.Group("/v1")
+	v1 := app.Group("/api/v1")
 	setupTodoRoutes(v1)
 }
 
